@@ -1,11 +1,13 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import ForecastTemp from "./ForecastTemp";
 
 export default function Forecast(props) {
   return (
     <div className="Forecast">
       <h1> {props.data.city} </h1>
-      <h2>{Math.round(props.data.temperature)} °F </h2>
+      <ForecastTemp fahrenheit={props.data.temperature} />
+
       <img src={props.data.icon} alt={props.data.description} />
       <div className="row">
         <div className="col-6">
