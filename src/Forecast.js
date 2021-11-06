@@ -1,14 +1,19 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import ForecastTemp from "./ForecastTemp";
+import "./Forecast.css";
 
 export default function Forecast(props) {
   return (
     <div className="Forecast">
-      <h1> {props.data.city} </h1>
+      <h2> {props.data.city} </h2>
       <ForecastTemp fahrenheit={props.data.temperature} />
 
-      <img src={props.data.icon} alt={props.data.description} />
+      <img
+        src={props.data.icon}
+        alt={props.data.description}
+        className="icon"
+      />
       <div className="row">
         <div className="col-6">
           <ul>
