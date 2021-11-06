@@ -1,0 +1,7 @@
+.DailyForecast {
+  text-align: center;
+}
+
+.DailyForecast-temps-min {
+  opacity: 0.5;
+}

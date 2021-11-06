@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Forecast from "./Forecast";
+import DailyForecast from "./DailyForecast";
 
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -62,6 +63,7 @@ export default function Weather(props) {
           </div>
         </form>
         <Forecast data={forecastData} />
+        <DailyForecast />
       </div>
     );
   } else {
