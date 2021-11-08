@@ -1,5 +1,5 @@
 .Weather {
-  border: 2px solid #e7eaf6;
+  border: 2px solid #005689;
   max-width: 800px;
   margin: auto;
   border-radius: 5px;
@@ -7,4 +7,13 @@
 
 li {
   list-style: none;
+}
+
+.btn {
+  background-color: #5dacbd;
+  color: black;
+}
+
+.btn:hover {
+  background-color: darkcyan;
 }
